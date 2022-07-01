@@ -20,7 +20,7 @@ export function Home() {
     function handleSubmit(event) {
         event.preventDefault();
         if(name.value && email.value && phone.value && password.value) {
-            navigate("/sucess");
+            navigate("/success");
         } else {
             console.log("Preencha todos os campos");
         }
@@ -30,7 +30,7 @@ export function Home() {
         <HomeContainer>        
             <Content>
                 <Header>
-                    <img src="src/Assets/internImg.png" />
+                    <img src='Assets/internImg.png' alt="" />
                     <Title>Intern Sing Up</Title>
                 </Header>
                 <form onSubmit={handleSubmit}>
